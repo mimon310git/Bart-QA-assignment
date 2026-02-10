@@ -1,0 +1,19 @@
+{
+"hotelUrl" : "https://hotel-example-site.takeyaqa.dev/en-US/",
+"month" : "4",
+"date" : "1",
+"year" : "2026",
+"name" : "Fero Novak",
+"email" : "random@example.com",
+"password" : "heslo123",
+"address" : "123 Main St, Anytown, USA",
+"phone" : "12345678911",
+"gender": "male",
+"dob": "1990-01-01",
+"presetmail": "clark@example.com",
+"presetpassword": "password",
+"presetname": "Clark Kent"
+
+
+
+}
