@@ -93,6 +93,8 @@ $env:GOOGLE_BOOKS_API_KEY="your_api_key_here"
 npm run test:api
 ```
 
+CI note: The API test requires `GOOGLE_BOOKS_API_KEY`. In GitHub Actions, configure it as a repository secret; otherwise the API test will fail.
+
 ## Deliverables
 
 - User stories: `userStories.md`
