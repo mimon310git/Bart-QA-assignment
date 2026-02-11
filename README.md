@@ -14,7 +14,7 @@ Note: The demo app has no backend. Data is stored only in the browser (localStor
 ## Install
 
 ```powershell
-cd D:\bart
+cd <project-root>
 npm install
 npx playwright install
 ```
@@ -95,6 +95,20 @@ npm run test:api
 
 CI note: The API test requires `GOOGLE_BOOKS_API_KEY`. In GitHub Actions, configure it as a repository secret; otherwise the API test will fail.
 
+## Bonus API Test
+
+Bonus test file: `tests/APIbonus.spec.js` (Agify public API, no API key required).
+
+It verifies that querying `name=alex` returns JSON with:
+- `name: "alex"`
+- a valid `age` field
+
+Run it with:
+
+```powershell
+npx playwright test APIbonus.spec.js
+```
+
 ## Deliverables
 
 - User stories: `userStories.md`
@@ -103,3 +117,4 @@ CI note: The API test requires `GOOGLE_BOOKS_API_KEY`. In GitHub Actions, config
   - `tests/task1.spec.js` (non-POM version)
   - `tests/POM.spec.js` + `tests/pages/*` (Page Object Model example)
   - `tests/APIbooks.spec.js` (API test)
+  - `tests/APIbonus.spec.js` (optional bonus API test)
