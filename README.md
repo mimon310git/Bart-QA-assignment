@@ -7,7 +7,7 @@ Note: The demo app has no backend. Data is stored only in the browser (localStor
 
 ## Scope and Limitations
 
-This submission intentionally covers only happy-path scenarios.
+This test suite covers only happy-path scenarios.
 
 ## Requirements
 
