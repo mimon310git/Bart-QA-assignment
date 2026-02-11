@@ -5,6 +5,10 @@ This repository contains E2E UI tests (FE only) for the Hotel Planisphere demo s
 
 Note: The demo app has no backend. Data is stored only in the browser (localStorage/sessionStorage) and is cleared in beforeEach to ensure a clean state.
 
+## Scope and Limitations
+
+This submission intentionally covers only happy-path scenarios.
+
 ## Requirements
 
 - Node.js 18+ (recommended: Node.js LTS)
