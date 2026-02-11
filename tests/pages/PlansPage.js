@@ -14,12 +14,7 @@ class PlansPage {
     await expect(this.anyReserveRoomLink).toBeVisible();
   }
 
-  /**
-   * Opens the "Reserve room" link for the given plan heading (e.g. "For honeymoon")
-   * which opens in a popup tab.
-   * @param {string} planHeadingText
-   * @returns {Promise<any>}
-   */
+
   async openReservationPopupForPlan(planHeadingText) {
     const card = this.page.getByRole('heading', { name: planHeadingText }).locator('..');
     await card.scrollIntoViewIfNeeded();

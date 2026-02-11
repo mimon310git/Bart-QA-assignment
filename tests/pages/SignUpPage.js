@@ -24,17 +24,6 @@ class SignUpPage {
     await expect(this.heading).toBeVisible();
   }
 
-  /**
-   * @param {{
-   *   email: string,
-   *   password: string,
-   *   name: string,
-   *   address?: string,
-   *   tel?: string,
-   *   gender?: string,
-   *   dob?: string
-   * }} data
-   */
   async signUp(data) {
     const { email, password, name, address, tel, gender, dob } = data;
     await this.email.fill(email);

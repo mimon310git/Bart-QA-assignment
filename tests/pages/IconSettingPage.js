@@ -16,12 +16,7 @@ class IconSettingPage {
     await expect(this.heading).toBeVisible();
   }
 
-  /**
-   * Uploads the icon file.
-   * This app keeps the file input in the DOM (often hidden). Setting files directly is more reliable
-   * than relying on the native file chooser across browsers.
-   * @param {string} filePath
-   */
+
   async uploadIcon(filePath) {
     await this.page.setInputFiles('#icon', filePath);
     // For <input type="file"> Playwright uses a fake path like C:\fakepath\file.png.

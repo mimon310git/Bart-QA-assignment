@@ -19,9 +19,7 @@ class ReservationPage {
     this.confirmReservationButton = page.getByRole('button', { name: 'Confirm Reservation' });
   }
 
-  /**
-   * @param {string} planName
-   */
+
   async waitForLoaded(planName) {
     // The plan name is displayed as a heading, but the level can vary.
     await expect(this.page.getByRole('heading', { name: planName })).toBeVisible();
@@ -47,9 +45,6 @@ class ReservationPage {
     await this.breakfast.check();
   }
 
-  /**
-   * @param {{ name: string, email: string, confirmationLabel?: string }} data
-   */
   async fillContact(data) {
     await this.name.fill(data.name);
     if (data.confirmationLabel) {
