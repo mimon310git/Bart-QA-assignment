@@ -116,7 +116,8 @@ npx playwright test APIbonus.spec.js
 ## Deliverables
 
 - User stories: `userStories.md`
-- Test scenarios: `testscen.xlsx`
+- Test scenarios (source): `testscen.xlsx`
+- Test scenarios (GitHub-friendly table format): `testScenarios.md`
 - Automated tests:
   - `tests/task1.spec.js` (non-POM version)
   - `tests/POM.spec.js` + `tests/pages/*` (Page Object Model example)
