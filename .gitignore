@@ -11,3 +11,11 @@ node_modules/
 /allure-results/
 /allure-report/
 
+# Playwright artifacts
+playwright-report/
+test-results/
+tmp-test-results*/
+
+# temp
+deleteme.txt
+
